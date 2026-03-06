@@ -1,0 +1,315 @@
+@import url("https://cdn.jsdelivr.net/gh/stpnwf/ZestyTheme@latest/colorschemes/cyan.css");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+body,
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Quicksand", sans-serif;
+}
+
+:root {
+    --white: 243, 242, 243; /* F3F2F3 */
+    --white-off: 207, 221, 233; /* CFDDE9 */
+    --jade-green: 0, 172, 111; /* 00AC6F */
+    --honey-yellow: 255, 194, 85; /* FFC255 */
+    --cherry-red: 212, 51, 83; /* D43353 */
+    --deep-blue: 78, 116, 247; /* 4E74F7 */
+}
+:root {
+    --rounding: 12px;
+    --rounding-alt: 9px;
+    --rounding-large: 24px;
+    --rounding-circle: 100px;
+}
+
+/*Colors for loading spinner, placeholders, scroll bars*/
+.mdl-spinner__layer-1 {
+    border-color: rgba(var(--accent), 1);
+}
+.mdl-spinner__layer-2 {
+    border-color: rgba(var(--accent), 0.8);
+}
+.mdl-spinner__layer-3 {
+    border-color: rgba(var(--accent), 0.6);
+}
+.mdl-spinner__layer-4 {
+    border-color: rgba(var(--accent), 0.5);
+}
+
+/* changes colors of Active devices cards in settings > dashboard */
+.defaultCardBackground1 {
+    background-color: rgba(var(--dark-highlight), 1);
+}
+.defaultCardBackground2 {
+    background-color: rgba(var(--dark-highlight), 1);
+}
+.defaultCardBackground3 {
+    background-color: rgba(var(--dark-highlight), 1);
+}
+.defaultCardBackground4 {
+    background-color: rgba(var(--dark-highlight), 1);
+}
+.defaultCardBackground5 {
+    background-color: rgba(var(--dark-highlight), 1);
+}
+.cardBox:not(.visualCardBox) .cardPadder {
+    background-color: rgba(var(--dark-highlight), 1);
+}
+
+/*Syncplay*/
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(0.95);
+        transform: scale(0.95);
+        color: rgba(var(--accent), 0.7);
+        background: rgba(var(--accent), 0.3);
+        box-shadow: 0 0 0 0 rgba(var(--accent), 0.3);
+    }
+    70% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        color: rgba(var(--accent), 0);
+        background: rgba(var(--accent), 0);
+        box-shadow: 0 0 0 60px rgba(var(--accent), 0);
+    }
+    to {
+        -webkit-transform: scale(0.95);
+        transform: scale(0.95);
+        color: rgba(var(--accent), 0);
+        background: rgba(var(--accent), 0);
+        box-shadow: 0 0 0 0 rgba(var(--accent), 0);
+    }
+}
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale(0.95);
+        transform: scale(0.95);
+        color: rgba(var(--accent), 0.7);
+        background: rgba(var(--accent), 0.3);
+        box-shadow: 0 0 0 0 rgba(var(--accent), 0.3);
+    }
+    70% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        color: rgba(var(--accent), 0);
+        background: rgba(var(--accent), 0);
+        box-shadow: 0 0 0 60px rgba(var(--accent), 0);
+    }
+    to {
+        -webkit-transform: scale(0.95);
+        transform: scale(0.95);
+        color: rgba(var(--accent), 0);
+        background: rgba(var(--accent), 0);
+        box-shadow: 0 0 0 0 rgba(var(--accent), 0);
+    }
+}
+@-webkit-keyframes infinite-pulse {
+    0% {
+        -webkit-transform: scale(0.95);
+        transform: scale(0.95);
+        color: rgba(var(--accent), 0.7);
+        background: rgba(var(--accent), 0.3);
+        box-shadow: 0 0 0 0 rgba(var(--accent), 0.3);
+    }
+    70% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        color: rgba(var(--accent), 0.6);
+        background: rgba(var(--accent), 0);
+        box-shadow: 0 0 0 60px rgba(var(--accent), 0);
+    }
+    to {
+        -webkit-transform: scale(0.95);
+        transform: scale(0.95);
+        color: rgba(var(--accent), 0.7);
+        background: rgba(var(--accent), 0.3);
+        box-shadow: 0 0 0 0 rgba(var(--accent), 0);
+    }
+}
+@keyframes infinite-pulse {
+    0% {
+        -webkit-transform: scale(0.95);
+        transform: scale(0.95);
+        color: rgba(var(--accent), 0.7);
+        background: rgba(var(--accent), 0.3);
+        box-shadow: 0 0 0 0 rgba(var(--accent), 0.3);
+    }
+    70% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        color: rgba(var(--accent), 0.6);
+        background: rgba(var(--accent), 0);
+        box-shadow: 0 0 0 60px rgba(var(--accent), 0);
+    }
+    to {
+        -webkit-transform: scale(0.95);
+        transform: scale(0.95);
+        color: rgba(var(--accent), 0.7);
+        background: rgba(var(--accent), 0.3);
+        box-shadow: 0 0 0 0 rgba(var(--accent), 0);
+    }
+}
+
+/* Syncplay theming*/
+.syncPlayIconCircle {
+    color: rgba(var(--accent), 1) !important;
+    text-shadow: none !important;
+}
+
+/* Red shutdown button */
+#btnShutdown {
+    background: rgba(var(--cherry-red)) !important;
+    color: rgba(var(--darkest)) !important;
+}
+
+/*Remove divider on list items*/
+.listItem-border {
+    border: 0 !important;
+}
+
+/* Green played check icon */
+.playstatebutton-icon-played {
+    color: rgba(var(--jade-green), 1) !important;
+}
+
+/* white dialog Backdrop */
+
+.dialogBackdropOpened {
+    opacity: 0.2;
+}
+
+.dialogBackdrop {
+    background-color: rgb(var(--darkest));
+}
+
+.tmla-mask {
+    background-color: rgba(249, 249, 249, 0.2); /* hardcoded */
+}
+
+/* floating */
+
+/* Floating progressbar edit - from JellyFlix theme */
+
+.itemProgressBar {
+    backdrop-filter: blur(4px);
+    background: rgba(var(--white-off), 0.35) !important;
+    height: 10px;
+    border-radius: 30px;
+}
+
+.layout-mobile .itemProgressBar {
+    height: 8px;
+}
+
+/* don't apply the blur inside Settings > Dashboard as it broke things for some reason */
+#dashboardPage .itemProgressBar {
+    backdrop-filter: none;
+}
+
+.itemProgressBarForeground {
+    background: rgb(var(--accent));
+    border-radius: var(--rounding-circle);
+}
+
+.innerCardFooter {
+    width: calc(100% - 24px);
+    margin: 0 auto;
+    position: absolute;
+    bottom: 12px;
+    box-shadow: 1px 1px 5px rgba(var(--dark), 0.25);
+}
+
+/* glossy */
+
+@supports (backdrop-filter: blur(15px)) {
+    .dialog,
+    .mainDrawer,
+    .toast,
+    .appfooter {
+        backdrop-filter: blur(15px);
+        background-color: rgba(var(--darkest), 0.75) !important;
+    }
+    #itemDetailPage .itemProgressBar,
+    #dashboardPage .backgroundProgress > div {
+        backdrop-filter: blur(4px);
+    }
+    @media all and (max-width: 70em) {
+        .cardOverlayButtonIcon {
+            /* background-color: rgba(var(--darkest), 0.35) !important; */
+        }
+        .cardOverlayButtonIcon {
+            /* backdrop-filter: blur(4px); */
+        }
+    }
+    .indicator {
+        /*  backdrop-filter: blur(2px); */
+    }
+
+    .paper-icon-button-light:hover:not(.headerButtonRight) {
+        backdrop-filter: blur(4px);
+    }
+}
+
+
+
+/* Fix for logos on 2K screens */
+@media (min-width: 130em) {
+    .layout-desktop .detailPageWrapperContainer {
+        margin-top: -84vh;
+    }
+    .layout-desktop .detailLogo {
+        width: 36em;
+    }
+}
+/* #### login frame #### */
+
+/*Narrow the login form, size according to display size (bigger on mobile)*/
+#loginPage .readOnlyContent,
+#loginPage form {
+    max-width: 22em;
+}
+
+#loginPage .padded-left.padded-right.padded-bottom-page {
+    margin-top: 8em;
+}
+
+/*Hide "manual" and "forgot" buttons}*/
+#loginPage .raised.cancel.block.btnForgotPassword.emby-button {
+    display: none;
+}
+
+#loginPage .padded-left.padded-right.padded-bottom-page {
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(var(--dark-highlight), 0.33);
+    backdrop-filter: blur(2px);
+    width: 24em;
+    border-radius: 44px; /* hardcoded */
+}
+#loginPage .squareCard {
+    width: 33%;
+}
+#loginPage form {
+    padding-top: 4em;
+}
+/* Fix for LogIn Box greeting */
+#loginPage .visualLoginForm h1 {
+    padding-top: 3em;
+}
+
+#loginPage .sectionTitle {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 1.2em !important;
+}
+
+#loginPage .pageTitleWithDefaultLogo {
+    display: none !important;
+}
+
+/* margin to Jellyfin logo */
+.pageTitle {
+    margin: 0 0 0 0.15em;
+}
+
