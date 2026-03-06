@@ -31,6 +31,7 @@ To add the theme to Jellyfin `v10.11+`, copy the following line to Dashboard > B
 ```
 @import url('https://github.com/agentwildfire/ZestyFork/blob/65271a62811b1ff94447b1cf36dc9b6b96439401/theme_login.css');
 @import url('https://cdn.jsdelivr.net/gh/stpnwf/ZestyTheme@latest/theme.css');
+@import url('https://cdn.jsdelivr.net/gh/agentwildfire/ZestyFork@latest/themse_login.css');
 ```
 
 <br>
