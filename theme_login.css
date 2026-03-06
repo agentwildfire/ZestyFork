@@ -74,3 +74,9 @@ h4 {
 .pageTitle {
     margin: 0 0 0 0.15em;
 }
+
+/* #### Loading Spinner customisation #### */
+.mdl-spinner__layer-1 {
+    border-color: rgba(var(--accent));
+}
+
