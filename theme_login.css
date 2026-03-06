@@ -8,6 +8,21 @@ h4 {
     font-family: "Quicksand", sans-serif;
 }
 
+:root {
+    --white: 243, 242, 243; /* F3F2F3 */
+    --white-off: 207, 221, 233; /* CFDDE9 */
+    --jade-green: 0, 172, 111; /* 00AC6F */
+    --honey-yellow: 255, 194, 85; /* FFC255 */
+    --cherry-red: 212, 51, 83; /* D43353 */
+    --deep-blue: 78, 116, 247; /* 4E74F7 */
+}
+:root {
+    --rounding: 12px;
+    --rounding-alt: 9px;
+    --rounding-large: 24px;
+    --rounding-circle: 100px;
+}
+
 
 /* #### login frame #### */
 
