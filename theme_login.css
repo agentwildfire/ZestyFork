@@ -80,3 +80,16 @@ h4 {
     border-color: rgba(var(--accent));
 }
 
+/*Colors for loading spinner, placeholders, scroll bars*/
+.mdl-spinner__layer-1 {
+    border-color: rgba(var(--accent), 1);
+}
+.mdl-spinner__layer-2 {
+    border-color: rgba(var(--accent), 0.8);
+}
+.mdl-spinner__layer-3 {
+    border-color: rgba(var(--accent), 0.6);
+}
+.mdl-spinner__layer-4 {
+    border-color: rgba(var(--accent), 0.5);
+}
