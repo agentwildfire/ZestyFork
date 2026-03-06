@@ -44,8 +44,8 @@ h4 {
 #loginPage .padded-left.padded-right.padded-bottom-page {
     margin-left: auto;
     margin-right: auto;
-    background: rgba(var(--dark-highlight), 0.33);
-    backdrop-filter: blur(2px);
+    background: rgba(var(--dark-highlight), 0.43);
+    backdrop-filter: blur(8px);
     width: 24em;
     border-radius: 44px; /* hardcoded */
 }
@@ -70,10 +70,30 @@ h4 {
     display: none !important;
 }
 
+/* Blue color scheme */
+
+:root {
+  --accent: 189, 230, 251;         /* #BDE6FB */
+  --accent-off: 111, 130, 138;     /* #6F828A */
+  --dark: 30, 37, 41;              /* #1E2529 */
+  --darkest: 23, 29, 32;           /* #171D20 */
+  --dark-highlight: 59, 73, 77;    /* #3B494D */
+  --dark-apparent: 32, 39, 42;     /* #20272A */
+  
+  --stylish-login: url("https://cdn.jsdelivr.net/gh/stpnwf/ZestyTheme@latest/images/login-wallpapers/stylish-blue.png");
+}
+
+#loginPage {background: url("https://cdn.jsdelivr.net/gh/stpnwf/ZestyTheme@latest/images/login-wallpapers/stylish-blue.png") !important;}
+.layout-tv .backgroundContainer, .layout-desktop .backgroundContainer {background: url("https://cdn.jsdelivr.net/gh/stpnwf/ZestyTheme@latest/images/gradients/blue.png") no-repeat center center;}
+.sessionAppInfo img {filter: invert(45%) sepia(70%) saturate(250%) hue-rotate(160deg) brightness(130%) contrast(60%);}
+
+
 /* margin to Jellyfin logo */
 .pageTitle {
     margin: 0 0 0 0.15em;
 }
+
+
 
 /* #### Loading Spinner customisation #### */
 .mdl-spinner__layer-1 {
